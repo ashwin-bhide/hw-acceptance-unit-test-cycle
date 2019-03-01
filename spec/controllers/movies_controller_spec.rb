@@ -25,8 +25,8 @@ require 'rails_helper'
             expect(Movie).to receive(:create!).with(@params).and_return(@movie)
             get :create, {:id => @movie_id, :movie => @params }
             expect(response).to redirect_to(movies_path)
-
-         end
+            
+        end
     end
     describe "#update" do
         it "Should update movie params" do
@@ -39,4 +39,4 @@ require 'rails_helper'
             expect(response).to redirect_to(movie_path(@movie))
         end
     end
-end 
+end

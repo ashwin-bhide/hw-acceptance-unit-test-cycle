@@ -12,4 +12,4 @@ require 'rails_helper'
             expect(movie1.list_movies_with_simliar_director).not_to include(movie2)
         end
 end
-end 
+end
